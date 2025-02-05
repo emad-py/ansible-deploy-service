@@ -1,0 +1,11 @@
+[Unit]
+Description=My Python Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/script.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
